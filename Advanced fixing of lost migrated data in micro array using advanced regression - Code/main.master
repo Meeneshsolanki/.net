@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <style type="text/css">
+        .style1
+        {
+            width: 119px;
+        }
+        .style2
+        {
+            width: 424px;
+        }
+        .auto-style1 {
+            width: 70px;
+        }
+        .auto-style2 {
+            width: 197px;
+        }
+        .auto-style3 {
+            width: 89px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         
+      <table  style="height: 196px; font-weight: bold; font-size: x-large; width:1340px; background-image: url('img/newhead.png'); color: #000066;" >
+        <tr>
+            
+               <td align="center">
+                    <br />
+                    </td>
+        </tr>
+    </table>
+         <table style="width:1340px; height:10px; background-color: #CCCCCC;">
+             <tr>
+                 <td>
+
+                 </td>
+             </tr>
+         </table>
+      
+    
+                
+                    <table style="width: 1340px; font-family: cambria; font-weight: bold; font-size: small; background-color: #F08346; height: 46px;">
+                     <tr>
+                            <td class="auto-style1">
+                                <asp:HyperLink ID="HyperLink8" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" 
+                                    Font-Names="Cambria" Font-Size="Small" NavigateUrl="~/empty.aspx">Home</asp:HyperLink>
+                            </td>
+
+                      
+                            <td>
+                                <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" NavigateUrl="~/patientreport.aspx" 
+                                    Font-Names="Cambria" Font-Size="Small">Upload Patient Report</asp:HyperLink>
+                            </td>
+
+                       
+                            <td>
+                                <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" NavigateUrl="~/missingdata.aspx">Find Missing Data</asp:HyperLink>
+                            </td>
+
+                      
+                            <td class="auto-style2">
+                                <asp:HyperLink ID="HyperLink7" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" NavigateUrl="~/calculateoccurence.aspx">Calculate % of Occurence</asp:HyperLink>
+                            </td>
+
+                     
+                            <td>
+                                <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" NavigateUrl="~/changepassword.aspx">Change Password</asp:HyperLink>
+                            </td>
+
+                        
+                            <td>
+                                <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" NavigateUrl="~/viewpatient.aspx">View Report</asp:HyperLink>
+                            </td>
+
+                       
+                            <td>
+                                <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" NavigateUrl="~/comparechart.aspx" >Compare Chart</asp:HyperLink>
+                            </td>
+
+                        
+                            <td>
+                                <asp:HyperLink ID="HyperLink10" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" NavigateUrl="~/existingmethod.aspx" >Proposed Method</asp:HyperLink>
+                            </td>
+
+                        
+                            <td class="auto-style3">
+                                <asp:HyperLink ID="HyperLink9" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" NavigateUrl="~/cleardb.aspx">Clear DB</asp:HyperLink>
+                            </td>
+
+                       
+                            <td>
+                                <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" 
+                                    ForeColor="Black" NavigateUrl="~/login.aspx">Log Out</asp:HyperLink>
+                            </td>
+
+                        </tr>
+                    </table>
+               <table align="center">
+                   <tr>
+                       <td>
+                            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+              </asp:ContentPlaceHolder>
+                       </td>
+                   </tr>
+               </table>
+            
+            
+         
+    </div>
+    </form>
+</body>
+</html>
